@@ -14,7 +14,7 @@ async def handle(request):
     user_name = session['login'] if 'login' in session else None
     if user_name != "admin" or user_name is None:
         return web.HTTPFound('/login')
-    rendered_index = template.render(name=user_name)
+    rendered_index = template.render(user=user_name)
     return web.Response(body=rendered_index, content_type="text/html")
 async def login_handle(request):
     template = templateEnv.get_template('login.html')
