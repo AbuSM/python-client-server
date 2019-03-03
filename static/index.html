@@ -4,18 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Main page</title>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="css/vanillacalendar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/vanillacalendar.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
     <div class="container">
-            <nav class="navbar navbar-dark indigo">
-                <span class="navbar-text white-text">
-                    Navbar text with an inline element
-                </span>
-            </nav>
-        Hello, {{user}}
+        <div class="row">            
+            <div class="page-header">
+                <h1>Welcome to the main page {{user}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs">
+                <!-- <aside>
+                    <div class="cal">
+                        <div class="cal__header">
+                            <button class="btn btn-action btn-link btn-lg" data-calendar-toggle="previous"><svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg></button>
+                            <div class="cal__header__label" data-calendar-label="month">
+                                March 2017
+                            </div>
+                            <button class="btn btn-action btn-link btn-lg" data-calendar-toggle="next"> <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></button>
+                        </div>
+                        <div class="cal__week">
+                            <span>Mon</span> <span>Tue</span><span>Wed</span> <span>Thu</span> <span>Fri</span> <span>Sat</span> <span>Sun</span>
+                        </div>
+                        <div class="cal__body" data-calendar-area="month"></div>
+                    </div>
+                </aside> -->
+            </div>
+            <div class="col">
+                <p>
+                    <strong>
+                        Lorem ipsum
+                    </strong>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nulla ipsum. Morbi et nisi urna. Etiam a mattis orci. Cras quis egestas metus, non fringilla quam. Morbi euismod nibh ipsum, at congue ligula dapibus a. Nullam posuere ac tortor vel pulvinar. Cras nunc massa, faucibus ac dictum eget, vulputate mattis augue. Integer maximus diam eros, vel tincidunt lectus sollicitudin vel. Vivamus non risus ac lorem feugiat convallis ac egestas urna. Ut pulvinar ultrices hendrerit. In nec ipsum eget lorem rutrum dignissim. Cras convallis mi et urna ornare placerat.
+                    
+                    Integer laoreet magna at ligula mollis, in rutrum massa ultricies. Nullam porta ac odio id eleifend. Donec eu vehicula risus, at vehicula lorem. Nam scelerisque neque nec orci vulputate, vel suscipit elit tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras posuere turpis eget quam sodales finibus. Ut fermentum, magna eu lobortis varius, mi est posuere nunc, ut cursus lorem nibh sit amet nulla. Curabitur ultrices ultricies risus, sit amet tincidunt ligula. Nullam aliquet et tellus id ultricies. Morbi vitae interdum sapien. Duis rutrum lectus non volutpat venenatis. Suspendisse metus arcu, sodales vel interdum id, aliquet et diam. Duis auctor vestibulum condimentum. Cras vitae convallis augue. Pellentesque ut condimentum velit.
+                    
+                    Nullam lacinia ante venenatis sapien sollicitudin laoreet. Ut rhoncus, justo ut faucibus eleifend, turpis mi accumsan diam, dictum elementum purus nunc a metus. Cras eget metus et dolor feugiat tincidunt non eget elit. In porta lorem id nisi euismod, ut vehicula odio sodales. Morbi hendrerit sit amet orci ut egestas. Nulla sed ipsum sit amet turpis auctor fringilla vel ut felis. Morbi vestibulum dapibus metus, vel venenatis nisi condimentum vitae. Nam magna quam, hendrerit volutpat velit in, mattis venenatis diam. Integer rutrum mauris et nulla pharetra, a porta nibh molestie. Curabitur dignissim aliquam mi, sed tincidunt sapien. Suspendisse elit felis, volutpat sit amet diam in, interdum laoreet dolor. Nulla vitae lacinia lorem. Aenean id ultrices mi, sed ultrices ipsum. Maecenas sodales blandit est, et euismod ligula eleifend eu. Aliquam erat volutpat. Donec tristique feugiat est in dapibus.
+                    
+                    Curabitur vehicula dolor nibh, vitae ultrices eros scelerisque ac. Nam fermentum tortor posuere, porttitor leo eu, sodales arcu. Fusce tempor accumsan sapien vel venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec in magna eros. Phasellus imperdiet pretium velit tempor congue. Morbi convallis odio eu ex venenatis facilisis non porta sapien. Aliquam eget est pellentesque, tincidunt orci eget, dapibus risus. Nunc congue auctor euismod.
+                    
+                    Curabitur laoreet quis purus eu tincidunt. Vivamus enim metus, molestie quis efficitur sit amet, efficitur ac dolor. Vestibulum auctor mauris quis augue venenatis ornare. Nulla facilisi. Donec non auctor felis. Nulla auctor eros sed iaculis rutrum. Nulla ac magna rutrum, feugiat lectus id, viverra enim. Suspendisse tortor metus, lobortis in rhoncus vel, tempor sit amet magna.
+                </p>
+            </div>    
+        </div>
+        <div class="row">
+            <footer class="col text-center justify-content-center">
+                Copyright © SAF group
+            </footer>
+        </div>
     </div>
 </body>
 </html>

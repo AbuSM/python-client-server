@@ -34,7 +34,7 @@ async def check_login(request):
         if await check_credentials(login, password):
             session = await get_session(request)
             session['login'] = login
-            return web.HTTPFound('/')
+            return web.HTTPFound('/') 
         return web.HTTPUnauthorized(
             body=b'Invalid username/password combination')
 

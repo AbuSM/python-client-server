@@ -1,0 +1,29 @@
+#login {
+    /* border: 1px solid white; */
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding: 10px;
+    width:100%;
+    margin:auto;
+    background:rgba(255,255,255,.8);
+    position:relative;
+    font-family: "Segoe UI" sans-serif;
+}
+h2, label {
+    color: #47CA4C;
+    text-shadow: white 0 0 2px;
+}
+.login-wrap {
+    background:url("../images/login.jpg") no-repeat center;
+    padding: 0px;
+}
+#header {
+    background-color: black;
+    margin-bottom: 15px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:10px;
+}
