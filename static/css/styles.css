@@ -20,10 +20,3 @@ h2, label {
     background-color: black;
     margin-bottom: 15px;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:10px;
-}
